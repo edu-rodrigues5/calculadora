@@ -83,7 +83,7 @@
 
     <script lang="JavaScript">
 
-        var code;
+  
 
         
 
@@ -99,37 +99,11 @@
         }
 
 
-        function soma()
-        {
-            var res;
-            code = document.getElementById('display').value;
-            try{
-             res = eval(code);
-            }catch(error)
-            {
-
-            document.getElementById('display').value = "error";   
-
-        }
+       
 
         
         function calcular()
         {
-            var i;
-            code = document.getElementById('display').value;
-            
-        code = code + " ";
-         for( i = 0; i = code.lastIndexOf(" "); i ++ ) 
-         {
-            switch(code)
-                {
-                    case code.charAt(i) == "+"
-                    soma();
-                    break; 
-                 }    
-         }
-
-
             
         }
 
