@@ -83,6 +83,11 @@
 
     <script lang="JavaScript">
 
+        var code;
+
+        code = document.getElementById('display').value;
+
+        
         function Add(value)
         {
             if(document.getElementById('display').value == "0")
@@ -92,10 +97,38 @@
 
             document.getElementById('display').value += value;
         }
+
+
+        function soma()
+        {
+            var res;
+
+            try{
+             res = eval(code);
+            }catch(error)
+            {
+
+            document.getElementById('display').value = "error";   
+
+        }
+
         
         function calcular()
         {
+            var i;
             
+        code = code + " ";
+         for( i = 0; i = code.lastIndexOf(" "); i ++ ) 
+         {
+            switch(code)
+                {
+                    case code.charAt(i) == "+"
+                    soma();
+                    break; 
+                 }    
+         }
+
+
             
         }
 
