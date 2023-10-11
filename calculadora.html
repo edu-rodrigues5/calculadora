@@ -85,7 +85,7 @@
 
         var code;
 
-        code = document.getElementById('display').value;
+        
 
         
         function Add(value)
@@ -102,7 +102,7 @@
         function soma()
         {
             var res;
-
+            code = document.getElementById('display').value;
             try{
              res = eval(code);
             }catch(error)
@@ -116,6 +116,7 @@
         function calcular()
         {
             var i;
+            code = document.getElementById('display').value;
             
         code = code + " ";
          for( i = 0; i = code.lastIndexOf(" "); i ++ ) 
